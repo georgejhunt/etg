@@ -37,7 +37,7 @@ to collect, and present to customers, detailed information and pictures of furni
 
 ####What resources are currently in place that might be helpful as models, or code snippets, to aid development of this project?
 
-* The data collection is currently done by filemaker. The current thinking is that the whole filemaker application can be replaced by a single data colection screen. 
+* The data collection is currently done by filemaker. The current thinking is that the whole filemaker application can be replaced by a data colection screen, and a find/review lot screen. 
 
 * The barcode image recognition, uploading, reviewing, editing is currently implemented in php/mysql, and may be appropriate for reuse.
     
