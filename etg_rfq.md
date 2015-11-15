@@ -20,9 +20,14 @@ to collect, and present to customers, detailed information and pictures of furni
 ####How are the pictures associated with items?
 
   After the above information is entered into the database, price tags are printed at the store for a specific lot. Each price tag includes a barcode which uniquely identifies the item.
+  
   Photogrphs, with unique file names, are synchronized with the information already entered into the database by, in every case, first making a photograph of the barcode. The photographs are sequentially uploaded to an appliction which uses the barcode to link each of the subsequent photos with the item that has been identified by the barcode.
   
 ####What provision for editing, reordeering, deleting, must be made for photos that are uploaded to the barcode recognition service?
+
+  The photos are preprocessed in google picasa. Watermarks, cropping, enhancing can be done at that point. Picasa does not facilitate changing the filename (and therefore the order of the pictures related to a given item).
+  
+  Therefore there must be a mechanism for reviewing, reordering, perhaps deleting pictures after they are uploaded to the barcode recognition system.
 
 ####How will information about items for sale be presented to the customers' device?
 * The device will have branding and direct access buttoms at the top and bottom of the screen, and an array of pictures in the middle region. Swiping vertically will scroll through available items, and horizontally will expose additional images related to a specific item.
