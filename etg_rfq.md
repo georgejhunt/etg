@@ -37,11 +37,13 @@ to collect, and present to customers, detailed information and pictures of furni
 
 ####What resources are currently in place that might be helpful as models, or code snippets, to aid development of this project?
 
-* The data collection is currently done by filemaker. The current thinking is that the whole filemaker application can be replaced by a data colection screen, and a find/review lot screen. 
+* This RFQ specifies a replacement for a current system, which in some ways is adequate. Information is currently collected via filemaker running locally, transfered to mysql via Microsoft Access, merged with pictures via php, and displayed in desktop thumbnail array via massivly transferred mysql db and image file sync to the ISP. See documentation for the current system at http://etgstores.com/furniture/database/furnitureintro.php.
 
-* The barcode image recognition, uploading, reviewing, editing is currently implemented in php/mysql, and may be appropriate for reuse.
+* The current thinking is that the whole filemaker application can be replaced by a data colection screen, and a find/review lot screen running in the cloud, and contributing data directly to the mysql database.
+
+* The barcode image recognition, uploading, reviewing, editing is currently implemented in php/mysql, and may be appropriate for reuse, by moving that code directly to the cloud machine.
     
-* The display and output code, with thumbnails branching to detailed item information, is not appropriate for hand held devices, and needs to be replaced.
+* The display and output images and data, with thumbnails branching to detailed item information, is not appropriate for hand held devices, and needs to be replaced. (see http://etgstores.com/furniture/database/thumbnails.php)
 
 ####What do the new data entry screens require?
 * Button to assign the next available lot number.
