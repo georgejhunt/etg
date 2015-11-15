@@ -9,13 +9,14 @@ to collect, and present to customers, detailed information and pictures of furni
   The application will run on a computer in the cloud. The only requirement for local computers at ETG Furniture Store is that they be able to run a current version of firefox or chrome.
   
 ####What information will be collected?
-*  Lot.line
-*  Set number
-*  material
-*  dimension
-*  location
-*  price
-*  category/classification
+*  Lot.line -- Auto generated, batch number and sequence number within batch, first screen has "start a new batch" button.
+*  Set number -- Furniture often has a number of items all belonging to the same set. This field indicates that the item is part of the set by adopting the lot.line of the first set item encountered.
+*  material -- free form text
+*  dimension -- 100 character text field
+*  location -- 40 character text
+*  price -- number
+*  category/classification -- drop down from mysql table
+*  Notes -- a 200 character optional description
 
 ####How are the pictures associated with items?
 
@@ -42,3 +43,7 @@ to collect, and present to customers, detailed information and pictures of furni
     
 * The display and output code, with thumbnails branching to detailed item information, is not appropriate for hand held devices, and needs to be replaced.
 
+####What does the new data entry screen require?
+* Button to begin assign the next available lot number.
+* Single lot.line data entry screen with each field set to maximum 
+* A review lot screen with each item on its own line, with fields truncated if necessary, to fit 1280 pixel screen width. Each line must have a delete item button.
