@@ -43,7 +43,7 @@ to collect, and present to customers, detailed information and pictures of furni
     
 * The display and output code, with thumbnails branching to detailed item information, is not appropriate for hand held devices, and needs to be replaced.
 
-####What does the new data entry screen require?
-* Button to begin assign the next available lot number.
+####What do the new data entry screens require?
+* Button to assign the next available lot number.
 * Single lot.line data entry screen with each field set to maximum 
-* A review lot screen with each item on its own line, with fields truncated if necessary, to fit 1280 pixel screen width. Each line must have a delete item button.
+* A review lot screen with each item on its own line, with fields truncated if necessary, to fit 1280 pixel screen width. Each line must have a delete item button. A search field will bring up a lot review screen for previously entered lots.
