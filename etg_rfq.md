@@ -15,8 +15,11 @@ to collect, and present to customers, detailed information and pictures of furni
 *  dimension -- 100 character text field
 *  location -- 40 character text
 *  price -- number
+*  color -- 40 char text
 *  category/classification -- drop down from mysql table
 *  Notes -- a 200 character optional description
+*  datein -- when taken into store
+*  datesold -- Sold items must remain visible on site for 2 weeks as enticement to act quickly
 
 ####How are the pictures associated with items?
 
