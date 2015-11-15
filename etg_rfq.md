@@ -46,7 +46,7 @@ to collect, and present to customers, detailed information and pictures of furni
 
 * The barcode image recognition, uploading, reviewing, editing is currently implemented in php/mysql, and may be appropriate for reuse, by moving that code directly to the cloud machine.
     
-* The display and output images and data, with thumbnails branching to detailed item information, is not appropriate for hand held devices, and needs to be replaced. (see http://etgstores.com/furniture/database/thumbnails.php)
+* The display of an array of images, with thumbnails branching to detailed item information, is not appropriate for hand held devices, and needs to be replaced. (see http://etgstores.com/furniture/database/thumbnails.php)
 
 ####What do the new data entry screens require?
 * Button to assign the next available lot number.
