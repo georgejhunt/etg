@@ -23,8 +23,8 @@ to collect, and present to customers, detailed information and pictures of furni
 1.  datesold -- Sold items must remain visible on site for 2 weeks as enticement to act quickly
 
 ####D. How are the pictures associated with items?
-  a. After the above information is entered into the database, price tags are printed at the store for a specific lot. Each price tag includes a barcode which uniquely identifies the item.
-  b. Photogrphs, with unique file names, are synchronized with the information already entered into the database by, in every case, first making a photograph of the barcode. The photographs are sequentially uploaded to an appliction which uses the barcode to link each of the subsequent photos with the item that has been identified by the barcode.
+  1. After the above information is entered into the database, price tags are printed at the store for a specific lot. Each price tag includes a barcode which uniquely identifies the item.
+  2. Photogrphs, with unique file names, are synchronized with the information already entered into the database by, in every case, first making a photograph of the barcode. The photographs are sequentially uploaded to an appliction which uses the barcode to link each of the subsequent photos with the item that has been identified by the barcode.
   
 ####E. What provision for editing, reordeering, deleting, must be made for photos that are uploaded to the barcode recognition service?
 
@@ -47,7 +47,15 @@ to collect, and present to customers, detailed information and pictures of furni
     
 * The display of an array of images, with thumbnails branching to detailed item information, is not appropriate for hand held devices, and needs to be replaced. (see http://etgstores.com/furniture/database/thumbnails.php)
 
-####What do the new data entry screens require?
-* Button to assign the next available lot number.
-* Single lot.line data entry screen with each field set to maximum 
-* A review lot screen with each item on its own line, with fields truncated if necessary, to fit 1280 pixel screen width. Each line must have a delete item button. A search field will bring up a lot review screen for previously entered lots.
+####H. What data entry screens are required?
+1. An intake screen with a button to assign the next available lot number, item name drop down field, and check boxes for the required tasks for that item (cleaning, repair, pricing, tagging, moving to floor).
+2. A details screen for each item which collects the size, features, condition, materials, location, price information ( one item per page with all available fields set to maximum size).
+3. A review lot screen with each item on its own line, with fields truncated if necessary, to fit 1280 pixel screen width. Each line must have a delete item button. A search field will bring up a lot review screen for previously entered lots.
+4. The lot review screen may double as the print label selector.
+5. It might also be used to break sets (remove the set id, and assign a separate price to a single item).
+6. A single data collection which accepts a barcode, and optionally a new location for generation of move lists.
+* 
+####I. What output forms and program outputs are needed?
+1. Print a tag for a single item, with barcode, item name, price, description, size, material
+2. Print a set of tags for a set, with the same barcode for all, a price for the set, and a list of other items that are in that set.
+3. Print a list of items (input via H.6 above) with old location, new location (for generating a move list), item name, lot.line, price (with optional output to a file so that the list can be emailed to movie companies as a receipt). This report might also be used at the cash register as part of the regular check out procedure for customers. It might also optionally fill in the datesold field in the database.
