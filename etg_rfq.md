@@ -59,3 +59,11 @@ to collect, and present to customers, detailed information and pictures of furni
 1. Print a tag for a single item, with barcode, item name, price, description, size, material
 2. Print a set of tags for a set, with the same barcode for all, a price for the set, and a list of other items that are in that set.
 3. Print a list of items (input via H.6 above) with old location, new location (for generating a move list), item name, lot.line, price (with optional output to a file so that the list can be emailed to movie companies as a receipt). This report might also be used at the cash register as part of the regular check out procedure for customers. It might also optionally fill in the datesold field in the database.
+
+####J. What security requirements are associated with running the database in the Cloud?
+* Authentication of clients in the store should require shared key authentication similar to ssh.
+
+####J. What additional Tasks are part of this request?
+* The new system should run in parallel with the current system for at lease 2 weeks.
+* Training of the staff in using the new system should be included
+* Migration of the current inventory to the new system should occur.
