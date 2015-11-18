@@ -53,8 +53,8 @@ to collect, and present to customers, detailed information and pictures of furni
 3. A review lot screen with each item on its own line, with fields truncated if necessary, to fit 1280 pixel screen width. Each line must have a delete item button. A search field will bring up a lot review screen for previously entered lots.
 4. The lot review screen may double as the print label selector.
 5. It might also be used to break sets (remove the set id, and assign a separate price to a single item).
-6. A single data collection which accepts a barcode, and optionally a new location for generation of move lists.
-* 
+6. A data collection form which accepts a barcode (or lot.line), and optionally a new location, for generation of move lists, receipts for movie companies, and at cash register checkout. The logic of this form might also be useful to an online customer to generate a list of items in preparation for a visit to the store.
+
 ####I. What output forms and program outputs are needed?
 1. Print a tag for a single item, with barcode, item name, price, description, size, material
 2. Print a set of tags for a set, with the same barcode for all, a price for the set, and a list of other items that are in that set.
