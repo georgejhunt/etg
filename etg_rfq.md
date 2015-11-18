@@ -1,44 +1,43 @@
 #Description of the desired system
 
-##Purpose:
+####A. Purpose:
 
 to collect, and present to customers, detailed information and pictures of furniture that is available for sale at ETG Furniture Store at 17 Brook in Staten Island.
 
-####What computer hardware will be used for the application?
+####B. What computer hardware will be used for the application?
 
   The application will run on a computer in the cloud. The only requirement for local computers at ETG Furniture Store is that they be able to run a current version of firefox or chrome.
   
-####What information will be collected?
-*  Lot.line -- Auto generated, batch number and sequence number within batch, first screen has "start a new batch" button.
-*  Set number -- Furniture often has a number of items all belonging to the same set. This field indicates that the item is part of the set by adopting the lot.line of the first set item encountered.
-*  material -- free form text
-*  dimension -- 100 character text field
-*  location -- 40 character text
-*  price -- number
-*  color -- 40 char text
-*  category/classification -- drop down from mysql table
-*  Notes -- a 200 character optional description
-*  datein -- when taken into store
-*  datesold -- Sold items must remain visible on site for 2 weeks as enticement to act quickly
+####C. What information will be collected?
 
-####How are the pictures associated with items?
+1.  Lot.line -- Auto generated, batch number and sequence number within batch, first screen has "start a new batch" button.
+2.  Set number -- Furniture often has a number of items all belonging to the same set. This field indicates that the item is part of the set by adopting the lot.line of the first set item encountered.
+3.   material -- free form text
+3.   dimension -- 100 character text field
+1.   location -- 40 character text
+1.   price -- number
+1.  color -- 40 char text
+1.  category/classification -- drop down from mysql table
+1.  Notes -- a 200 character optional description
+1.  datein -- when taken into store
+1.  datesold -- Sold items must remain visible on site for 2 weeks as enticement to act quickly
 
-  After the above information is entered into the database, price tags are printed at the store for a specific lot. Each price tag includes a barcode which uniquely identifies the item.
+####D. How are the pictures associated with items?
+  a. After the above information is entered into the database, price tags are printed at the store for a specific lot. Each price tag includes a barcode which uniquely identifies the item.
+  b. Photogrphs, with unique file names, are synchronized with the information already entered into the database by, in every case, first making a photograph of the barcode. The photographs are sequentially uploaded to an appliction which uses the barcode to link each of the subsequent photos with the item that has been identified by the barcode.
   
-  Photogrphs, with unique file names, are synchronized with the information already entered into the database by, in every case, first making a photograph of the barcode. The photographs are sequentially uploaded to an appliction which uses the barcode to link each of the subsequent photos with the item that has been identified by the barcode.
-  
-####What provision for editing, reordeering, deleting, must be made for photos that are uploaded to the barcode recognition service?
+####E. What provision for editing, reordeering, deleting, must be made for photos that are uploaded to the barcode recognition service?
 
   The photos are preprocessed in google picasa. Watermarks, cropping, enhancing can be done at that point. Picasa does not facilitate changing the filename (and therefore the order of the pictures related to a given item).
   
   Therefore there must be a mechanism for reviewing, reordering, perhaps deleting pictures after they are uploaded to the barcode recognition system.
 
-####How will information about items for sale be presented to the customers' device?
+####F. How will information about items for sale be presented to the customers' device?
 * The device will have branding and direct access buttoms at the top and bottom of the screen, and an array of pictures in the middle region. Swiping vertically will scroll through available items, and horizontally will expose additional images related to a specific item.
 * Items will, in general, be presented in the order they arrived in the store, with the most recent, first. 
 * The search function will accept a large number of potential search words, which all get resolved to major categories (mapping is yet to be determined) and are returned in "most recent" first order.
 
-####What resources are currently in place that might be helpful as models, or code snippets, to aid development of this project?
+####G. What resources are currently in place that might be helpful as models, or code snippets, to aid development of this project?
 
 * This RFQ specifies a replacement for a current system, which in some ways is adequate. Information is currently collected via filemaker running locally, transfered to mysql via Microsoft Access, merged with pictures via php, and displayed in desktop thumbnail array via massivly transferred mysql db and image file sync to the ISP. See documentation for the current system at http://etgstores.com/furniture/database/furnitureintro.php.
 
